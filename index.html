@@ -22,22 +22,45 @@
         height: auto;
         object-fit: fill;
       }
-      a {
-        text-decoration: none;
-        color: #159e8c;
-        margin-right: 20px;
+
+      .nav-links {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin-right: 30px;
+        padding: 0;
       }
 
-      a:hover {
+      .nav-links a {
+        text-decoration: none;
+        color: #ffffff;
+        margin-right: 35px;
+        margin-top: -100px;
+      }
+      .custom-header {
+        background-color: #0c534a;
+        border-radius: 20px;
+        height: 20px;
+        padding: 20px;
+      }
+      .custom-header img {
+        width: 100px;
+        height: 100px;
+        margin-left: 50px;
+      }
+
+      .nav-links a:hover {
         color: #07ffda;
         text-decoration: underline;
       }
+
       .footer {
         background-color: #0c534a;
         color: #fff;
         text-align: left;
         padding: 20px;
         width: 97%;
+        border-radius: 20px;
       }
       .footer a {
         color: #fff;
@@ -75,8 +98,14 @@
     </style>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="custom-header">
+      <a href="/index.html">
+        <img
+          src="/assets/images/Visit srilanka logo.jpeg"
+          alt="Visit Srilanka logo"
+        />
+      </a>
+      <nav class="nav-links">
         <a href="/index.html">Home</a>
         <a href="/pages/nationOfSrilanka.html">Our Nation</a>
         <a href="/pages/natureOfSrilanka.html">Feel the Nature</a>
@@ -85,10 +114,10 @@
         <a href="/pages/industriesOfSrilanka.html">Varieties of Industries</a>
         <a href="/pages/specialPlacesOfSrilanka.html">Travel Special Places</a>
       </nav>
-      <h1>Visit Sri Lanka</h1>
     </header>
 
     <main>
+      <h1>Visit Sri Lanka</h1>
       <section>
         <article>
           <p>
