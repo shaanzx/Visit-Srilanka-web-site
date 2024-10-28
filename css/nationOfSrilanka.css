@@ -77,7 +77,42 @@ a {
   font-size: 12px;
 }
 
+/* burger menu */
+.burger {
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 30%;
+  height: 100%;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 10px 0;
+  z-index: 5;
+  transition: right 0.7s ease-in-out;
+}
+
+.burger a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+#close-icon {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+  margin: 10px 0 0 180px;
+}
+
 @media screen and (max-width: 768px) {
+
   main {
     margin-top: 50px;
   }
