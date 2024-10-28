@@ -35,6 +35,8 @@ a {
   border-radius: 20px;
   height: 20px;
   padding: 20px;
+  position: sticky;
+  top: 0;
 }
 
 .custom-header img {
@@ -69,4 +71,73 @@ img {
   display: block;
   width: 300px;
   height: 250px;
+}
+
+@media screen and (max-width: 1440px) {
+  p {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    margin: -20px 0 0 150px;
+  }
+
+  .footer p {
+    margin-left: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer p {
+    margin-left: 60%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .custom-header img {
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+  }
+  img {
+    margin-left: 18%;
+    margin-right: 10%;
+    width: 250px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .footer {
+    margin-top: 150px;
+    width: 90%;
+  }
+
+  .footer a {
+    margin-left: 20px;
+    margin-right: 0;
+    gap: 24px;
+    font-size: 13px;
+  }
+  .footer p {
+    margin-left: 20%;
+    margin-top: 12px;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  img{
+    margin-right: 0;
+    margin-left: 2%;
+  }
+  
 }

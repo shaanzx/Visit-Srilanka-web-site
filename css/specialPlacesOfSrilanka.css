@@ -30,6 +30,8 @@ a {
   border-radius: 20px;
   height: 20px;
   padding: 20px;
+  position: sticky;
+  top: 0;
 }
 .custom-header img {
   width: 100px;
@@ -74,4 +76,71 @@ a {
 .image {
   width: 350px;
   height: 300px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    margin: -20px 0 0 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    flex-direction: column-reverse;
+  }
+
+  .text{
+    width: 100%;
+    text-align: justify;
+  }
+  p{
+    text-align: justify;
+  }
+
+  .footer{
+    width: 94%;
+  }
+
+  .footer p{
+    margin-left: 60%;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+
+  .custom-header img{
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+  }
+  .custom-header {
+    width: 90%;
+  }
+
+  .nav-links{
+    text-align: center;
+    align-items: center;
+  }
+  .footer{
+    width: 90%;
+  }
+
+  .footer p{
+    margin-left: 20%;
+    margin-top: 12px;
+  }
+
+  .footer a{
+    margin-left: 12px;
+    margin-right: 0;
+    gap: 14px;
+    font-size: 13px;
+  }
+  main{
+    margin-top: 24px;
+  }
+  p{
+    font-size: 0.8rem;
+  }
 }
